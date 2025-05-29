@@ -1,0 +1,260 @@
+body {
+  background-color: #47adc7; /* Light blue shade */
+}
+
+#background-image {
+  width: 90vw;
+  height: 60vh;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 1s ease-in-out;
+}
+p{
+    margin:10px 5vw 40px 5vw;
+    font-size: 2.1rem;
+}
+
+#deedar_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 60vw;
+  max-width: 320px;
+  min-width: 140px;
+  /* Nice, subtle background */
+  background: linear-gradient(135deg, #35c6da 60%, #b2ebf2 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+  padding: 18px;
+  border: 1.5px solid #59d3dc;
+}
+body {
+    font-family: 'Dancing Script', sans-serif !important;
+}
+
+
+
+.top-nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+
+.hidden-image {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.7s ease-out;
+  margin: 30px 0; /* Add vertical space between images */
+  display: block;  /* Ensure images are on separate lines */
+  margin-left: 40px;
+  margin-right: auto;
+  /* Optionally, set a max-width for consistency */
+  width: 80vw;
+  max-width: 300px;
+  min-width: 120px;
+  height: auto;
+}
+.hidden-image-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.7s ease-out;
+  margin: 30px 0; /* Add vertical space between images */
+  display: block;  /* Ensure images are on separate lines */
+  margin-left: auto;
+  margin-right: 40px; /* Keep images mostly on the right */
+  /* Optionally, set a max-width for consistency */
+  width: 80vw;
+  max-width: 300px;
+  min-width: 120px;
+  height: auto;
+}
+.show {
+  width: 80vw;
+  max-width: 300px;
+  min-width: 120px;
+  height: auto;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s ease-out;
+  /* Keep the image in its respective side after animation */
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin: 32px 0 32px 0;
+}
+.image-grid a {
+  display: block;
+  max-width: 320px;
+  width: 45vw;
+  margin: 24px 0;
+}
+.image-grid a:nth-child(odd) {
+  margin-left: 0;
+  margin-right: auto;
+  align-self: flex-start;
+}
+.image-grid a:nth-child(even) {
+  margin-left: auto;
+  margin-right: 0;
+  align-self: flex-end;
+}
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+.image-grid img:hover {
+  transform: scale(1.04);
+}
+@media (max-width: 900px) {
+  .image-grid a {
+    max-width: 180px;
+    width: 90vw;
+    margin: 16px 0;
+  }
+}
+@media (max-width: 600px) {
+  .image-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-grid a {
+    max-width: 120px;
+    width: 95vw;
+    margin: 8px 0;
+  }
+}
+
+body.dark-mode {
+  background-color: #181c24;
+}
+
+body.dark-mode #background-image {
+  filter: brightness(0.7) contrast(1.1);
+}
+
+body.dark-mode #deedar_pic {
+  background: linear-gradient(135deg, #232a36 60%, #2c3a4a 100%);
+  border: 1.5px solid #59d3dc;
+}
+
+body.dark-mode .hidden-image,
+body.dark-mode .hidden-image-right,
+body.dark-mode .show {
+  background: #232a36;
+  border: 2px solid #59d3dc;
+}
+
+body.dark-mode nav.navbar {
+  background: #232a36 !important;
+}
+
+body.dark-mode p {
+  color: #fff;
+}
+
+body.dark-mode .top-nav a,
+body.dark-mode .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+body.dark-mode #map-container {
+  background: #232a36 !important;
+}
+
+/* Toggle button style */
+#theme-toggle {
+  position: fixed;
+  top: 60px;
+  right: 18px;
+  z-index: 1000;
+  background: #232a36;
+  color: #fff;
+  border: 1.5px solid #59d3dc;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+#theme-toggle:hover {
+  background: #59d3dc;
+  color: #232a36;
+}
+#map-container {
+  align-items: center;
+}
+
+.footer-custom {
+  width: 100vw;
+  left: 0;
+  right: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: 0;
+  background: linear-gradient(135deg, #b2ebf2 60%, #47adc7 100%);
+  color: #232a36;
+  border-top: 2px solid #59d3dc;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.06);
+  font-family: 'Dancing Script', cursive, sans-serif;
+}
+.footer-custom .footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.footer-custom .footer-links {
+  font-size: 1.1rem;
+}
+.footer-custom .footer-link {
+  color: #232a36;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+.footer-custom .footer-link:hover {
+  color: #59d3dc;
+  text-decoration: underline;
+}
+.footer-custom .footer-social-icon {
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+.footer-custom .footer-copy {
+  font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  .footer-custom {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+body.dark-mode .footer-custom {
+  background: linear-gradient(135deg, #232a36 60%, #181c24 100%);
+  color: #fff;
+  border-top: 2px solid #59d3dc;
+}
+body.dark-mode .footer-custom .footer-link {
+  color: #fff;
+}
+body.dark-mode .footer-custom .footer-link:hover {
+  color: #59d3dc;
+}
+body.dark-mode .footer-custom .footer-copy {
+  color: #b2ebf2;
+}
