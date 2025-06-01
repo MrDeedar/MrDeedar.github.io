@@ -1,112 +1,298 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Mir Deedar Farm House</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Mir Deedar Farm House</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-  <!-- <link rel="style.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="icons/oip1.png">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg bg-black py-3">
-    <div class="container-fluid text-white" style="position:relative;">
-      <span class="nav-center" style="font-size: 17px;">Gorchani Farm House</span>
-      <div class="ms-auto d-flex align-items-center" style="gap: 12px;">
-        <button id="theme-toggle">Toggle Dark Mode</button>
-        <button class="bi bi-arrow-left text-white" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#map-container">Address</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#footer" id="contact-link">Contact me</a>
-          </li>
-
-        </ul>
-      </div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
-  </nav>
-  <img id="deedar_pic" src="images/deedar_pic.png" alt="deedar_pic">
+    <!-- Spinner End -->
 
-  <p style="align-self: center;">Assalamualaikum, and welcome to my farmhouse's website! Here, you will find its location
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-3 bg-primary d-none d-lg-block">
+                <a href="index.html"
+                    class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 display-4 text-white text-uppercase">Deedar Farm House</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row gx-0 d-none d-lg-flex bg-dark">
+                    <div class="col-6 px-5 text-start">
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                            <i class="fa fa-envelope text-primary me-2"></i>
+                            <p class="mb-0">Mirdeedarhussain786@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-6 px-5 text-end">    
+                        <div class="h-100 d-inline-flex align-items-center py-2">
+                            <i class="fa fa-phone-alt text-primary me-2"></i>
+                            <p class="mb-0"><a href="tel:+92310253121" >+92310253121</a></p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style="background: #111111;">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Hello</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                        
+                            <a href=".container-fluid" class="nav-item nav-link">Contact</a>
+                            
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid p-5 mb-5 bg-dark text-secondary">
+        <div class="row g-5 py-5">
+            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-1 text-secondary text-center mb-0">Mir Deedar Farm House</h1>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <img class="img-fluid rounded mb-3" src="img/hero-2.jpeg">
+                <p>
+                    <i class="bi bi-arrow-down animate-up-down" style="font-size: 3rem;"></i>
+                </p>
+                <p class="mb-0">
+                  Assalamualaikum, and welcome to my farmhouse's website! Here, you will find its location
     along with a glimpse of the serene surroundings and experiences that await you. I hope
     this gives you a preview of what to expect should you choose to visit.
   </p>
-  </div>
-  <div class="image-grid">
-    <a style="margin-left: 50px; margin-top: 50px;" href="images/image1.jpeg" target="_blank">
-      <img class="show" src="images/image1.jpeg">
-    </a>
-    <a style="margin-right: 50px;"href="images/image2.jpeg" target="_blank">
-      <img class="hidden-image" src="images/image2.jpeg">
-    </a>
-    <a href="images/image3.jpeg" target="_blank">
-      <img class="hidden-image" src="images/image3.jpeg">
-    </a>
-    <a href="images/image4.jpeg" target="_blank">
-      <img class="hidden-image-right" src="images/image4.jpeg">
-    </a>
-    <a href="images/image5.jpeg" target="_blank">
-      <img class="hidden-image" src="images/image5.jpeg">
-    </a>
-    <a href="images/image6.jpeg" target="_blank">
-      <img class="hidden-image-right" src="images/image6.jpeg">
-    </a>
-  </div>
-  <div style="margin-left: 50px ; " id="map-container"
-      style="flex:1; min-width:220px; min-height:300px; max-width:520px; background:#e0f7fa; border-radius:18px; box-shadow:0 2px 12px rgba(0,0,0,0.08); display:flex; align-items:center; justify-content:center;">
-      <!-- Replace the src below with the Google Maps embed link for your location -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.9133999771466!2d68.45059977617078!3d26.42627108082443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394a49291f365d23%3A0x7f2f8ac0c4b3244d!2sGorchani%20Farm%20House!5e0!3m2!1sen!2s!4v1748281262135!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        <!-- width="100%" height="100%" style="border:0; border-radius:18px; min-height:300px; min-width:220px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-    </div>
-    <footer id="footer" class="footer-custom mt-5">
-      <div class="container text-center py-4">
-        <div class="footer-title mb-2">Mir Deedar Farm House</div>
-        <div class="footer-links mb-2">
-          <a href="#" class="footer-link">Home</a> |
-          <a href="#" class="footer-link">Contact me</a>
-        </div>  
-        <div class="footer-social mb-2">
-          <a href="https://www.facebook.com/share/15PogorduH/?mibextid=wwXIfr" class="footer-social-icon" title="Facebook"><img src="icons/facebook.svg" alt="Facebook link."
-              style="width:28px;height:28px;border-radius:50%;object-fit:cover;"></a>
-          <a href="https://mail.google.com/mail/u/0/?view=cm&to=Mirdeedarhussain786@gmail.com" class="footer-social-icon" title="Gmail"><img src="icons/icons8-gmail-login-30.png" alt="Gmail link."
-              style="width:28px;height:28px;border-radius:50%;object-fit:cover;"></a>
-          <a href="tel:+92310253121" class="footer-social-icon" title="Phone"><img src="icons/icons8-phone-24.png" alt="Phone."
-              style="width:28px;height:28px;border-radius:50%;object-fit:cover;"></a>
-
-
-          <!-- Add more social icons as needed -->
+                </p>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded" src="img/hero-1.jpeg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+              
+                <p>
+                    <i class="bi bi-arrow-up animate-up-down" style="font-size: 3rem;"></i>
+                </p>
+                <img class="img-fluid rounded" src="img/hero-3.jpeg">
+            </div>
         </div>
-        <div class="footer-copy text-muted">&copy; 2025 Mir Deedar Farm House. All rights reserved.</div>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Dark mode toggle logic
-      document.getElementById('theme-toggle').onclick = function () {
-        document.body.classList.toggle('dark-mode');
-        // Optionally, save preference
-        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-      };
-      // On load, restore preference
-      if (localStorage.getItem('darkMode') === 'true') {
-        document.body.classList.add('dark-mode');
-      }
-    </script>
-    <!--This website was created by Mr.AwaisMuzaffar.github.io -->
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid p-5">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <div class="position-absolute top-0 start-0 animate-rotate"
+                        style="width: 160px; height: 160px;">
+                        <img class="img-fluid" src="img/about-round.jpg" alt="">
+                    </div>
+                    <img class="position-absolute w-100 h-100 rounded-circle rounded-bottom rounded-end"
+                        src="img/deedar_pic.png" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="mb-4 wow fadeIn" data-wow-delay="0.2s">
+                    <h5 class="section-title">I Am</h5>
+                    <h1 class="display-3 mb-0"></h1>
+                </div>
+                <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">
+                 Deedar Hussain, a proud Civil Engineer and landowner from Nawabshah, carrying forward a legacy built on dedication and hard work. My journey has been shaped by the land beneath my feet—the soil that sustains, the structures I’ve built, and the relationships I’ve nurtured.
+                    It is truly an honor to have you here. Whether you seek a retreat into nature, a moment of peace away from the city, or simply an authentic experience, this farmhouse stands as a testament to my passion for hospitality and sustainability.
+                </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+  
+    
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid p-0 my-5">
+        <div class="row g-0">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
+                <div class="h-100 position-relative overflow-hidden" style="border-top-left-radius: 50%;">
+                    <img class="position-absolute w-100 h-100" src="img/deedar_pic2.png" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 bg-dark p-5 overflow-hidden wow fadeIn" data-wow-delay="0.3s" style="border-bottom-right-radius: 50%;">
+                <div class="mb-5">
+                    <h5 class="section-title">Testimonial</h5>
+                    <h1 class="display-3 text-secondary mb-0">Our Client Say</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                        <p class="fs-4 fw-normal text-light mb-4"><i
+                                class="fa fa-quote-left text-primary me-3"></i> Thank you for visiting my website. I look forward to welcoming you in person and sharing the essence of this land with you.</p>
+                       
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+<br><br>
+
+    <!-- Instagram Start -->
+    <div class="container-fluid position-relative instagram p-0 mt-5">
+        <!-- <a href="" class="d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle bg-white rounded-circle" style="width: 100px; height: 100px; z-index: 1;">
+            <i class="fab fa-instagram fa-2x text-secondary"></i>
+        </a> -->
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                <img class="img-fluid" src="img/image4.jpeg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.2s">
+                <img class="img-fluid" src="img/image5.jpeg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                <img class="img-fluid" src="img/image6.jpeg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                <img class="img-fluid" src="img/image7.jpeg" alt="">
+            </div>
+            <!-- <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                <img class="img-fluid" src="img/menu-6.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+                <img class="img-fluid" src="img/menu-7.jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+    <!-- Instagram End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary px-5">
+        <div class="row gx-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <h3 class="text-light mb-4">Get In Touch</h3>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">123 Street, New York, USA</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&to=Mirdeedarhussain786@gmail.com" class="footer-social-icon" title="Gmail"> <p class="mb-0">Mirdeedarhussain786@gmail.com</p></a>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">
+                            <a href="tel:+92310253121" >+92310253121</a></p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.facebook.com/share/15PogorduH/?mibextid=wwXIfr"><i
+                                    class="fab fa-facebook-f"></i></a>
+                          
+                        </div>
+                    </div>
+                  
+                    
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="d-flex flex-column justify-content-start">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-5"
+                    style="background: #111111;">
+                    <h3 class="text-white mb-4">Directions</h3>
+                    <iframe style="width: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.9133999771466!2d68.45059977617078!3d26.42627108082443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394a49291f365d23%3A0x7f2f8ac0c4b3244d!2sGorchani%20Farm%20House!5e0!3m2!1sen!2s!4v1748281262135!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    
+                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="py-lg-4 text-center">
+                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">Mir Deedar Farm House</a>. All
+                        Rights Reserved. </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
